@@ -1,0 +1,101 @@
+/* Steam Style for BetterDiscord - main.css */
+/* Подключай этот файл через @import в своей .theme.css */
+
+:root, * {
+  /* Общие цвета */
+  --background-primary: #1b2838;
+  --background-secondary: #171a21;
+  --background-tertiary: #2a475e;
+  --channeltextarea-background: #0e141b;
+  --background-floating: #2a475e;
+  --background-accent: #66c0f4;
+
+  /* Текст */
+  --text-normal: #c7d5e0;
+  --text-muted: #a4b0be;
+  --header-primary: #66c0f4;
+  --header-secondary: #8dcbe6;
+
+  /* Интерактивные элементы */
+  --interactive-normal: #66c0f4;
+  --interactive-hover: #8dcbe6;
+  --interactive-active: #417a9b;
+  --interactive-muted: #4f5d75;
+
+  /* Скроллбар */
+  --scrollbar-thin-thumb: #417a9b;
+  --scrollbar-thin-track: #171a21;
+
+  /* Границы */
+  --background-modifier-border: rgba(255, 255, 255, 0.05);
+
+  /* Шрифт */
+  --font-primary: 'Segoe UI', sans-serif;
+}
+
+/* Общее */
+body {
+  font-family: var(--font-primary) !important;
+  background-color: var(--background-secondary) !important;
+  color: var(--text-normal) !important;
+}
+
+/* Панели */
+.container-1eFtFS,
+.sidebar-2K8pFh,
+.chat-2ZfjoI,
+.members-3WRCEx {
+  background-color: var(--background-primary) !important;
+  border-radius: 6px;
+}
+
+/* Верх */
+.titleBar-AC4pGV,
+.container-ZMc96U {
+  background-color: var(--background-tertiary) !important;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+/* Кнопки */
+.button-38aScr,
+.lookFilled-1Gx00P {
+  background-color: var(--interactive-normal);
+  color: #fff;
+  transition: background-color 0.2s ease-in-out;
+}
+.button-38aScr:hover {
+  background-color: var(--interactive-hover);
+}
+.button-38aScr:active {
+  background-color: var(--interactive-active);
+}
+
+/* Ссылки */
+a {
+  color: var(--interactive-normal);
+}
+a:hover {
+  color: var(--interactive-hover);
+}
+
+/* Скроллбар */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thin-thumb);
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-thin-track);
+}
+
+/* Подсветка сообщений */
+.message-2CShn3:hover {
+  background-color: rgba(102, 192, 244, 0.05);
+}
+
+/* Иконка Home (можешь поменять) */
+.homeIcon-r0w4ny {
+  background-image: url('https://i.imgur.com/9fx54Gn.png');
+  background-size: cover;
+}
